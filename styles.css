@@ -100,5 +100,10 @@ footer {
 
 div.maintext{
 	margin-bottom: 100px;
+	padding-left:250px;
+    padding-right:250px;
+}
+div.subheading {
+	font-size: 40px;
 }
 
