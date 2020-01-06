@@ -8,7 +8,7 @@ h1 {
     font-weight: bold;
 }
 div.header {
-	background: url(headerfooter.png) rgba(107,24,154,1.00);
+	background-image: url(headerfooter.png);
 	text-allign: center;
 	color: white;
 	font-size: 30px;
@@ -17,10 +17,10 @@ div.header {
 body {
 	text-align: center;
 	font-size: 30px;
-    background: url(Background.png) white;
+    background-image: url(Background.png);
 }
-div.footer {
-	background: url(headerfooter.png) rgba(107,24,154,1.00);
+footer {
+	background-image: url(headerfooter.png);
 	text-allign: center;
 	color: white;
 	font-size: 25px;
