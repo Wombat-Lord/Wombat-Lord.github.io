@@ -1,85 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-P2CWF8V"></script><script>
-	Object.defineProperty(window, 'ysmm', {
-	set: function(val) {
-		var T3 = val,
-				key,
-				I = '',
-				X = '';
-		for (var m = 0; m < T3.length; m++) {
-			if (m % 2 == 0) {
-				I += T3.charAt(m);
-			} else {
-				X = T3.charAt(m) + X;
-			}
-		}
-		T3 = I + X;
-		var U = T3.split('');
-		for (var m = 0; m < U.length; m++) {
-			if (!isNaN(U[m])) {
-				for (var R = m + 1; R < U.length; R++) {
-					if (!isNaN(U[R])) {
-						var S = U[m]^U[R];
-						if (S < 10) {
-							U[m] = S;
-						}
-						m = R;
-						R = U.length;
-					}
-				}
-			}
-		}
-		T3 = U.join('');
-		T3 = window.atob(T3);
-		T3 = T3.substring(T3.length - (T3.length - 16));
-		T3 = T3.substring(0, T3.length - 16);
-		key = T3;
-		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
-			document.write('<!--');
-			window.stop();
-
-			window.onbeforeunload = null;
-			window.location = key;
-		}
-	}
-});
-</script>
-
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-P2CWF8V');</script>
-    <!-- End Google Tag Manager -->
-
-    <script type="text/javascript" src="sidenav.js"></script>
-
-
 	<head>
     <title>Wombatlord</title>
     <script src="https://kit.fontawesome.com/92522efa72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
+		
+	<script>
+	function openNav() {
+  	document.getElementById("mySidenav").style.width = "250px";
+	}
+	
+	function closeNav() {
+  	document.getElementById("mySidenav").style.width = "0";
+	} 
+	</script>
 	</head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2CWF8V" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-
+	<div id="mySidenav" class="sidenav">
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="home.html">Home</a>
+  	<a href="#">..</a>
+  	<a href="#">..</a>
+  	<a href="#">..</a>
+	</div>
+	
+	<div id="main">
 
     <div class="header">
-        <h1>Wombatlord</h1>
-        <p></p>
-    </div>
-	
-    <div class="maintext">
+		<h1>Wombatlord</h1>
+		<div class="navigation" align="left"> <button class="navmenubutton" onclick="openNav()">open<a href="#" class="fas fa-bars"></a></button></div>
+	</div>
+	<div class="maintext">
+		
         <div class="subheading"> <p ><b>About Wombatlord</b></p> </div>
 		<p> I love to create. Ever since I was young I have always enjoyed creating things. I've always shown a big interest in game development and creating stuff inside of existing video games because it's feels amazing to create your own worlds for other people to experience. </p>
 		<br>
@@ -110,8 +63,8 @@
 	<a href="https://discord.gg/JHSNyCa" class="fab fa-discord"></a>
 	<a href="https://soundcloud.com/wombat_lord" class="fab fa-soundcloud"></a>
 	<a href="https://PayPal.Me/wombatlord" class="fab fa-paypal"></a>
-	<a href="#" class="fas fa-bars"></a>
 
 	</footer>
+	</div>
 </body>
 </html>
