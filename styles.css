@@ -20,11 +20,15 @@ body {
     background-image: url(Background.png);
 }
 footer {
+	position: fixed;
+	width: 100%;
 	background-image: url(headerfooter.png);
 	text-allign: center;
 	color: white;
 	font-size: 25px;
 	padding: 60px;
+	bottom: 0;
+	left 0;
 }
 div.subcount {
   margin: auto;
