@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+body
+{
+  background-color: #2f3333;
+}
+
+.main-title
+{
+	font-size: 64px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.navbar
+{
+   text-align: center;
+   position: fixed;
+   width: 100%;
+   overflow: auto;
+   height: auto;
+}
+
+.navbar a
+{
+	border-radius: 10px;
+	font-weight: bold;
+	text-align: center;
+    width: 8vw;
+    display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar a.home-bar
+{
+    color: #9349c4;
+}
+
+.navbar a.home-bar:hover
+{
+	color: #9349c4;
+	background-color: #2b2b2b;
+}
+
+.navbar a.active.home-bar
+{
+	color: #2f3333;
+	background-color: #9349c4;
+}
+
+.navbar a.games-bar
+{
+    color: #b38514;
+}
+
+.navbar a.games-bar:hover
+{
+	color: #b38514;
+	background-color: #2b2b2b;
+}
+
+.navbar a.active.games-bar
+{
+	color: #2f3333;
+	background-color: #b38514;
+}
+
+.navbar a.contact-bar
+{
+    color: #4577b0;
+}
+
+.navbar a.contact-bar:hover
+{
+	color: #4577b0;
+	background-color: #2b2b2b;
+}
+
+.navbar a.active.contact-bar
+{
+	color: #2f3333;
+	background-color: #4577b0;
+}
