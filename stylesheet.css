@@ -43,12 +43,11 @@ body
 
 .navbar a.active
 {
-  border: solid 1px #555;
-  background-color: #eed;
-  box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-  -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-  -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
-  -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  	border: solid 1px black;
+  	background-color: #eed;
+    -moz-box-shadow: inset 2px 2px 5px rgba(148, 148, 148, .4), inset -2px -2px 5px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 5px rgba(148, 148, 148, .4), inset -2px -2px 5px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 5px rgba(148, 148, 148, .4), inset -2px -2px 5px rgba(0, 0, 0, .4);
 }
 
 .navbar a.home-bar
@@ -70,19 +69,19 @@ body
 
 .navbar a.games-bar
 {
-    color: #b38514;
+    color: #bf5a02;
 }
 
 .navbar a.games-bar:hover
 {
-	color: #b38514;
+	color: #bf5a02;
 	background-color: #2b2b2b;
 }
 
 .navbar a.active.games-bar
 {
 	color: #2f3333;
-	background-color: #b38514;
+	background-color: #bf5a02;
 }
 
 .navbar a.contact-bar
